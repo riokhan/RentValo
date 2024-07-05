@@ -5,12 +5,12 @@ import VideoPopup from '../elements/VideoPopup'
 export default function Hero2() {
     return (
         <>
-            <section className="hero-section fix hero-1 hero-2 bg-cover" style={{ backgroundImage: 'url("assets/img/hero/hero-bg-2.jpg")' }}>
+            <section className="hero-section fix hero-1 hero-2 bg-cover" style={{ backgroundImage: 'url("https://media.istockphoto.com/id/1037437274/vector/halftone-abstract-background-vector-dot-pattern-gradient.jpg?s=612x612&w=0&k=20&c=TwYad5sVzvnCZDVqKY22dJVG7h68jwM8hDykGIPqqzo=")' }}>
                 {/* <div className="line-shape-2">
                     <img src="/assets/img/hero/line-shape-2.png" alt="shape-img" />
                 </div>
                 <div className="right-shape">
-                    <img src="/assets/img/hero/right-shape.png" alt="shape-img" />
+                    <img src="/assets/img/hero/right-shape.png" hape-img" />
                 </div>
                 <div className="left-shape">
                     <img src="/assets/img/hero/left-shape.png" alt="shape-img" />
@@ -22,7 +22,7 @@ export default function Hero2() {
                     <img src="/assets/img/hero/frame.png" alt="shape-img" />
                 </div>
                 <div className="circle-shape">
-                    <img src="/assets/img/choose/circle.png" alt="shape-img" />
+                    <img src="/assets/img/choose/circle1.png" alt="shape-img" />
                 </div> */}
                 <div className="container">
                     <div className="row g-4 align-items-center">
@@ -37,7 +37,7 @@ export default function Hero2() {
                                 </p>
                                 <div className="hero-button">
                                     <Link href="/listing" className="theme-btn wow fadeInUp" data-wow-delay=".8s">
-                                        Explore More
+                                        Find My Room
                                         <i className="fa-solid fa-arrow-right-long" />
                                     </Link>
                                     <VideoPopup style={3} />
