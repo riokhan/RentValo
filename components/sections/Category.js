@@ -103,27 +103,6 @@ export default function Category() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-xl-3 col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".7s">
-                            <div className="team-card-items">
-                                <div className="team-image">
-                                    <img src="/assets/img/property/5.jpg" alt="team-img" />
-                                    {/* <div className="social-profile">
-                                        <span className="plus-btn"><i className="fas fa-share-alt" /></span>
-                                        <ul>
-                                            <li><Link href="#"><i className="fab fa-facebook-f" /></Link></li>
-                                            <li><Link href="#"><i className="fa-brands fa-twitter" /></Link></li>
-                                            <li><Link href="#"><i className="fab fa-linkedin-in" /></Link></li>
-                                        </ul>
-                                    </div> */}
-                                </div>
-                                <div className="team-content text-center">
-                                    <h3>
-                                        <Link href="/team-details">Eco-Friendly Homes</Link>
-                                    </h3>
-                                    <p>Sustainable living</p>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </section>

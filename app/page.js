@@ -57,7 +57,7 @@ export default function Home() {
                 <Achievement4 />
                 <Faq2 />
                 <News4 /> */}
-                <Cta1 />
+                {/* <Cta1 /> */}
             </Layout>        </>
     )
 }
