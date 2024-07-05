@@ -106,9 +106,9 @@ export default function TourDetails() {
             <div className="team-details-wrapper">
               <div className="row g-4">
                 <div className="col-lg-5 new-team">
-                  <p style={{ fontSize: "20px", marginBottom: "5px" }}>
+                  <h3 style={{ fontSize: "24px", marginBottom: "5px" }}>
                     21 Cornelius Way, #, (East Cambridge)
-                  </p>
+                  </h3>
                   <div className="team-details-image">
                     <button
                       className="scroll-button left"
@@ -257,7 +257,7 @@ export default function TourDetails() {
                           </div>
                         ))}
                       </div> */}
-                    <p>Pick Date</p>
+                    <h3>Pick Date</h3>
                     <div className="date-picker" style={{ marginTop: "15px" }}>
                       {dates.map(({ day, date }) => (
                         <div
@@ -276,7 +276,7 @@ export default function TourDetails() {
                         </div>
                       ))}
                     </div>
-                    <p style={{ marginTop: "15px" }}>Pick Time</p>
+                    <h3 style={{ marginTop: "15px" }}>Pick Time</h3>
                     <div className="time-picker" style={{ marginTop: "15px" }}>
                       {times.map((time) => (
                         <div
@@ -291,7 +291,9 @@ export default function TourDetails() {
                       ))}
                     </div>
 
-                    <button className="next-button">Next</button>
+                    <Link href="/booking-page" style={{ width: "60%" }}>
+                      <button className="next-button">Next</button>
+                    </Link>
                   </div>
                 </div>
               </div>

@@ -8301,3 +8301,7 @@ color: white;
   }
 }
 
+.newbook{
+  background-color: none !important;
+  padding: 0px !important;
+}
