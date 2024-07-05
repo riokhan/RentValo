@@ -5,7 +5,7 @@ import VideoPopup from '../elements/VideoPopup'
 export default function Hero2() {
     return (
         <>
-            <section className="hero-section fix hero-1 hero-2 bg-cover" style={{ backgroundImage: 'url("https://media.istockphoto.com/id/1037437274/vector/halftone-abstract-background-vector-dot-pattern-gradient.jpg?s=612x612&w=0&k=20&c=TwYad5sVzvnCZDVqKY22dJVG7h68jwM8hDykGIPqqzo=")' }}>
+            <section className="hero-section fix hero-1 hero-2 bg-cover" style={{ backgroundImage: 'url("/assets/img/service/service-bg-2.jpg")' }}>
                 {/* <div className="line-shape-2">
                     <img src="/assets/img/hero/line-shape-2.png" alt="shape-img" />
                 </div>
@@ -46,7 +46,7 @@ export default function Hero2() {
                         </div>
                         <div className="col-lg-4">
                             <div className="hero-image wow fadeInUp" data-wow-delay=".4s">
-                                <img src="/assets/img/hero/banner33.jpg" alt="hero-img" />
+                                <img src="/assets/img/hero/building2w2.png" alt="hero-img" />
                                 {/* <div className="border-circle">
                                     <img src="https://infoteknextjs.vercel.app/assets/img/hero/hero-2.png" alt="shape-img" />
                                 </div> */}

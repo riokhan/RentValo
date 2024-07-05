@@ -13,7 +13,7 @@ export default function Category() {
                                 Find the Right Fit for Your Lifestyle
                             </h2>
                         </div>
-                        <Link href="/team" className="theme-btn wow fadeInUp" data-wow-delay=".5s">
+                        <Link href="/listing" className="theme-btn wow fadeInUp" data-wow-delay=".5s">
                             View All Property
                             <i className="fa-solid fa-arrow-right-long" />
                         </Link>
