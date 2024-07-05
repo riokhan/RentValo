@@ -40,10 +40,10 @@ export default function Home() {
                 {/* <Achievement2 />  */}
                 {/* <Service4 /> */}
                 {/* <Testimonial2 /> */}
-                {/* <Testimonial4 />
+                <Testimonial4 />
                 
-                <Project4 />
-                <About4 /> */}
+                {/* <Project4 /> */}
+                {/* <About4 /> */}
                 
                 {/* <StayCompetition/> */}
                 {/* <Team4 />
