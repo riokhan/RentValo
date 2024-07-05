@@ -10,7 +10,7 @@ export default function Hero2() {
                     <img src="/assets/img/hero/line-shape-2.png" alt="shape-img" />
                 </div>
                 <div className="right-shape">
-                    <img src="/assets/img/hero/right-shape.png" alt="shape-img" />
+                    <img src="/assets/img/hero/right-shape.png" hape-img" />
                 </div>
                 <div className="left-shape">
                     <img src="/assets/img/hero/left-shape.png" alt="shape-img" />
