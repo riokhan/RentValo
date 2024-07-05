@@ -4284,8 +4284,11 @@ span {
 }
 @media (max-width: 575px) {
   .hero-1 .hero-content h1 {
-    font-size: 17px;
+    font-size: 21px;
     margin-bottom: 25px;
+  }
+  .hero-1 .hero-content p{
+    font-size: 14px !important;
   }
   .hero4titlenew{
     font-size: 17px; 
