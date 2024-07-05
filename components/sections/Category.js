@@ -19,7 +19,7 @@ export default function Category() {
                         </Link>
                     </div>
                     <div className="row">
-                        <div className="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+                        <div className="col-xl-3 col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".3s">
                             <div className="team-card-items">
                                 <div className="team-image">
                                     <img src="/assets/img/team/01.jpg" alt="team-img" />
@@ -40,7 +40,7 @@ export default function Category() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".5s">
+                        <div className="col-xl-3 col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".5s">
                             <div className="team-card-items">
                                 <div className="team-image">
                                     <img src="/assets/img/team/02.jpg" alt="team-img" />
@@ -61,7 +61,28 @@ export default function Category() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".7s">
+                        <div className="col-xl-3 col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".7s">
+                            <div className="team-card-items">
+                                <div className="team-image">
+                                    <img src="/assets/img/team/03.jpg" alt="team-img" />
+                                    <div className="social-profile">
+                                        <span className="plus-btn"><i className="fas fa-share-alt" /></span>
+                                        <ul>
+                                            <li><Link href="#"><i className="fab fa-facebook-f" /></Link></li>
+                                            <li><Link href="#"><i className="fa-brands fa-twitter" /></Link></li>
+                                            <li><Link href="#"><i className="fab fa-linkedin-in" /></Link></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div className="team-content text-center">
+                                    <h3>
+                                        <Link href="/team-details">Dianne Russell</Link>
+                                    </h3>
+                                    <p>Marketing manager</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-xl-3 col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".7s">
                             <div className="team-card-items">
                                 <div className="team-image">
                                     <img src="/assets/img/team/03.jpg" alt="team-img" />
