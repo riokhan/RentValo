@@ -26,6 +26,7 @@ import Team4 from "@/components/sections/Team4"
 import Testimonial1 from "@/components/sections/Testimonial1"
 import Testimonial2 from "@/components/sections/Testimonial2"
 import Testimonial4 from "@/components/sections/Testimonial4"
+import Faqdetails from "./faq-details/page"
 export default function Home() {
 
     return (
@@ -41,7 +42,7 @@ export default function Home() {
                 {/* <Service4 /> */}
                 {/* <Testimonial2 /> */}
                 <Testimonial4 />
-                
+                <Faqdetails />
                 {/* <Project4 /> */}
                 {/* <About4 /> */}
                 
