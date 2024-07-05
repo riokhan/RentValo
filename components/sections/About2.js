@@ -19,13 +19,13 @@ export default function About2() {
                                             <img src="/assets/img/about/icon-1.svg" alt="icon-img" />
                                         </div>
                                         <div className="content">
-                                            <h3><CounterUp count={25}/>Years</h3>
-                                            <p>Of Experience</p>
+                                            <h3>For Rent</h3>
+                                            {/* <p>Of Experience</p> */}
                                         </div>
                                     </div>
                                     <div className="about-image-1 bg-cover wow fadeInLeft" data-wow-delay=".3s" style={{ backgroundImage: 'url("https://frontend-n6489.vercel.app/assets/img/others/about.jpg")' }}>
                                         <div className="about-image-2 wow fadeInUp" data-wow-delay=".5s">
-                                            <img src="/assets/img/about/04.jpg" alt="about-img" />
+                                            <img src="/assets/img/about/house.png" alt="about-img" />
                                         </div>
                                     </div>
                                 </div>
@@ -90,7 +90,7 @@ export default function About2() {
                                     <div className="about-author">
                                         <div className="about-button wow fadeInUp" data-wow-delay=".5s">
                                             <Link href="/" className="theme-btn">
-                                                Explore More
+                                                Book Now
                                                 <i className="fa-solid fa-arrow-right-long" />
                                             </Link>
                                         </div>
