@@ -23,8 +23,8 @@ export default function Listing() {
 
     return (
         <>
-
-            {/* <Layout headerStyle={1} footerStyle={2} breadcrumbTitle="Services Details"> */}
+ 
+            <Layout headerStyle={2} footerStyle={2} >
                 <section className="service-details-section fix section-padding">
                     <div className="container-fluid">
                         <div className="service-details-wrapper">
@@ -500,7 +500,7 @@ export default function Listing() {
                     </div>
                 </section>
 
-            {/* </Layout> */}
+            </Layout>
         </>
     )
 }

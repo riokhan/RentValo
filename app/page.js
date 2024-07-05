@@ -1,5 +1,6 @@
 import Layout from "@/components/layout/Layout"
 import About1 from "@/components/sections/About1"
+import About2 from "@/components/sections/About2"
 import About4 from "@/components/sections/About4"
 import Achievement1 from "@/components/sections/Achievement1"
 import Achievement2 from "@/components/sections/Achievement2"
@@ -10,6 +11,7 @@ import Cta1 from "@/components/sections/Cta1"
 import Faq1 from "@/components/sections/Faq1"
 import Faq2 from "@/components/sections/Faq2"
 import Hero1 from "@/components/sections/Hero1"
+import Hero2 from "@/components/sections/Hero2"
 import Hero4 from "@/components/sections/Hero4"
 import Marque1 from "@/components/sections/Marque1"
 import Marque2 from "@/components/sections/Marque2"
@@ -33,9 +35,11 @@ export default function Home() {
 
 <Layout headerStyle={4} footerStyle={4}>
                 {/* <Hero4 /> */}
-                <Hero1 />
+                {/* <Hero1 /> */}
+                <Hero2 />
                 {/* <Brand4 /> */}
                 <Brand1 />
+                <About2 />
                 <Service1 />
                 {/* <Achievement2 />  */}
                 {/* <Service4 /> */}

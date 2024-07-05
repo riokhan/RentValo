@@ -10368,7 +10368,7 @@ fieldset:disabled .btn {
         display: inline-block !important
     }
     .d-md-block {
-        display: block !important
+        display: none !important
     }
     .d-md-grid {
         display: grid !important
