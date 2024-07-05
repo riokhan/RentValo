@@ -33,7 +33,7 @@ export default function Offcanvas({
 
                             <div className="offcanvas__contact">
                                 <h4>Contact Info</h4>
-                                <ul>
+                                {/* <ul>
                                     <li className="d-flex align-items-center">
                                         <div className="offcanvas__contact-icon">
                                             <i className="fal fa-map-marker-alt" />
@@ -66,7 +66,8 @@ export default function Offcanvas({
                                             <Link href="/tel:+11002345909">+11002345909</Link>
                                         </div>
                                     </li>
-                                </ul>
+                                </ul> */}
+                                <MobileMenu />
                                 <div className="header-button mt-4">
                                     <Link href="/contact" className="theme-btn text-center">
                                         <span>get A Quote<i className="fa-solid fa-arrow-right-long" /></span>
