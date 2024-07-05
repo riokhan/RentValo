@@ -32,7 +32,7 @@ export default function Offcanvas({
                             </div>
 
                             <div className="offcanvas__contact">
-                                <h4>Contact Info</h4>
+                                {/* <h4>Contact Info</h4> */}
                                 {/* <ul>
                                     <li className="d-flex align-items-center">
                                         <div className="offcanvas__contact-icon">
@@ -68,7 +68,7 @@ export default function Offcanvas({
                                     </li>
                                 </ul> */}
                                 <MobileMenu />
-                                <div className="header-button mt-4">
+                                {/* <div className="header-button mt-4">
                                     <Link href="/contact" className="theme-btn text-center">
                                         <span>get A Quote<i className="fa-solid fa-arrow-right-long" /></span>
                                     </Link>
@@ -78,7 +78,7 @@ export default function Offcanvas({
                                     <Link href="#"><i className="fab fa-twitter" /></Link>
                                     <Link href="#"><i className="fab fa-youtube" /></Link>
                                     <Link href="#"><i className="fab fa-linkedin-in" /></Link>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>

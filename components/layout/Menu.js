@@ -91,10 +91,10 @@ export default function Menu() {
                     </ul> */}
                 </li>
                 <li>
-                    <Link href="/about">Student Buddy</Link>
+                    <Link href="/listing">Student Buddy</Link>
                 </li>
                 <li>
-                    <Link href="/news">
+                    <Link href="/listing">
                         
                     Housing Checklist
                         {/* <i className="fas fa-angle-down ps-1" /> */}
