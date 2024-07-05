@@ -151,9 +151,9 @@ export default function Property() {
                                                 </div>
                                                 </div></div></div> */}
                                     
-                                    <div style={{paddingTop:"20px",justifyContent:"right",display:"flex"}}>
+                                    <div style={{paddingTop:"20px"}}>
                                     <Link href="/tour-details" className="" style={{width:"60%"}}>
-                                <Button variant="contained" className='buttonhero41' endIcon={<ArrowOutwardIcon />} style={{width:"84%"}}>Tour</Button></Link>
+                                <Button variant="contained" className='buttonhero41' endIcon={<ArrowOutwardIcon />} style={{width:"60%"}}>Tour</Button></Link>
                                     
                                     
           </div>
@@ -233,11 +233,26 @@ export default function Property() {
                                                     <Link href="#" style={{borderRadius:'20px'}}>Gardener</Link>
                                                     <Link href="#" style={{borderRadius:'20px'}}>Heater</Link>
                                                     <Link href="#" style={{borderRadius:'20px'}}>Trash</Link>
-                                                    <Link href="#" >Water</Link>
-                                                    <Link href="#">Snow Removal</Link>
+                                                    <Link href="#"  style={{borderRadius:'20px'}}>Water</Link>
+                                                   
                                                 </div>
                                             </div>
                                         </div>
+                                        {/* <div className="single-sidebar-widget">                                            
+                                            <div className="googpemap">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6678.7619084840835!2d144.9618311901502!3d-37.81450084255415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642b4758afc1d%3A0x3119cc820fdfc62e!2sEnvato!5e0!3m2!1sen!2sbd!4v1641984054261!5m2!1sen!2sbd" style={{ border: 0 }} allowFullScreen loading="lazy" />
+                            </div>
+                                            
+                                            <div className="news-widget-categories">
+                                                <div className="tagcloud">
+                                                <div className="team-content text-center">
+                                    <p><i className="fa-solid fa-male"/> Walking:13minutes</p>
+                                    <p><i className="fa-solid fa-train"/> Transit:15minutes</p>
+                                    <p><i className="fa-solid fa-flag"/> Distance:0.5miles</p>
+                                </div>
+                                                </div>
+                                            </div>
+                                        </div> */}
                                 </div>
                                     {/* Optional sidebar content */}
                                     <div>
@@ -260,6 +275,25 @@ export default function Property() {
                   </div>
                     </div>
                                 </div>
+                                {/* <div className="widget-head">
+                                <div className="footer-content">
+                                        <ul className="contact-info">
+                                            <li>
+                                                <i className="fas fa-map-marker-alt" />
+                                                6391 Elgin St. Celina, USA
+                                            </li>
+                                            <li>
+                                                <i className="fa-solid fa-phone-volume" />
+                                                <Link href="/tel:2086660112">+208-666-0112</Link>
+                                            </li>
+                                            <li>
+                                                <i className="fa-regular fa-envelope" />
+                                                <Link href="/mailto:infotech@gmail.com">Infotech@gmail.com</Link>
+                                            </li>
+                                        </ul>
+                                        
+                                    </div>
+                                    </div> */}
                                 <div className="team-content text-center">
                                     <p><i className="fa-solid fa-male"/> Walking:13minutes</p>
                                     <p><i className="fa-solid fa-train"/> Transit:15minutes</p>
@@ -269,20 +303,7 @@ export default function Property() {
                         </div>
                     </div>
                 </div>
-            </section>
-                    <section className="project-section fix">
-                        <div className="container">
-                            <div className="project-wrapper ms-0">
-                            <div className="swiper project-slider-2">
-                
-                  
-                        
-                    
-                    
-            </div>
-                            </div>
-                        </div>
-                    </section>
+            </section>                 
 
                 </div>
                                 </div>
