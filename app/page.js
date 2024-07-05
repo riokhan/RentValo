@@ -58,6 +58,7 @@ export default function Home() {
                 <Faq2 />
                 <News4 /> */}
                 {/* <Cta1 /> */}
+                
             </Layout>        </>
     )
 }

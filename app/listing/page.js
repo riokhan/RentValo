@@ -7,6 +7,7 @@ import { useState } from "react";
 import Button from "@mui/material/Button";
 
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
+import Hero2 from "@/components/sections/Hero2";
 export default function Listing() {
   const [activeItem, setActiveItem] = useState(1);
   const [isHovered, setIsHovered] = useState(false);
@@ -23,9 +24,9 @@ export default function Listing() {
 
   return (
     <>
-      {/* <Layout headerStyle={1} footerStyle={2} breadcrumbTitle="Services Details"> */}
+      <Layout headerStyle={1} footerStyle={2}>
       <section className="service-details-section fix section-padding">
-        <div className="container-fluid">
+        <div className="container">
           <div className="service-details-wrapper">
             <div className="row g-4">
               <div className="col-12 col-lg-7 col-md-6 order-1 order-md-1">
@@ -694,7 +695,7 @@ export default function Listing() {
         </div>
       </section>
 
-      {/* </Layout> */}
+      </Layout>
     </>
   );
 }
