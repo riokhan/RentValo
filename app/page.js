@@ -27,6 +27,7 @@ import Testimonial1 from "@/components/sections/Testimonial1"
 import Testimonial2 from "@/components/sections/Testimonial2"
 import Testimonial4 from "@/components/sections/Testimonial4"
 import Faqdetails from "./faq-details/page"
+import Category from "@/components/sections/Category"
 export default function Home() {
 
     return (
@@ -41,6 +42,7 @@ export default function Home() {
                 {/* <Achievement2 />  */}
                 {/* <Service4 /> */}
                 {/* <Testimonial2 /> */}
+                <Category />
                 <Testimonial4 />
                 <Faqdetails />
                 {/* <Project4 /> */}
