@@ -8,12 +8,12 @@ import Button from "@mui/material/Button";
 
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 export default function Listing({ handleSearch }) {
-  const [activeItem, setActiveItem] = useState(1);
+  const [setActiveItem] = useState(1);
 
   const [isHovered, setIsHovered] = useState(false);
-  const [selectedOption, setSelectedOption] = useState("Exclusive (Default)");
-  const [hoveredOption, setHoveredOption] = useState(null);
-  const [contextMenu, setContextMenu] = useState({
+  //   const [selectedOption, setSelectedOption] = useState("Exclusive (Default)");
+  //   const [hoveredOption, setHoveredOption] = useState(null);
+  const [setContextMenu] = useState({
     visible: false,
     x: 0,
     y: 0,
