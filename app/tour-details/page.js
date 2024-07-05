@@ -107,7 +107,7 @@ export default function TourDetails() {
               <div className="row g-4">
                 <div className="col-lg-5 new-team">
                   <p style={{ fontSize: "20px", marginBottom: "5px" }}>
-                    Way, #, (East Cambridge)
+                    21 Cornelius Way, #, (East Cambridge)
                   </p>
                   <div className="team-details-image">
                     <button
