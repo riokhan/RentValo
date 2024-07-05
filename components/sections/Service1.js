@@ -151,7 +151,7 @@ export default function Service1() {
                                         <div className="content">
                                             <h4>
                                                 <Link href="/">
-                                                Perfect Tools
+                                                Locality Insights
                                                 </Link>
                                             </h4>
                                             <p>
@@ -172,7 +172,7 @@ export default function Service1() {
                                         <div className="content">
                                             <h4>
                                                 <Link href="/">
-                                                Search in Click
+                                                Locality Insights
                                                 </Link>
                                             </h4>
                                             <p>
@@ -193,7 +193,7 @@ export default function Service1() {
                                         <div className="content">
                                             <h4>
                                                 <Link href="/">
-                                                User Control
+                                                Transaction Prices
                                                 </Link>
                                             </h4>
                                             <p>
@@ -214,7 +214,7 @@ export default function Service1() {
                                         <div className="content">
                                             <h4>
                                                 <Link href="/">
-                                                5 Star Support
+                                                Read Latest News
                                                 </Link>
                                             </h4>
                                             <p>
