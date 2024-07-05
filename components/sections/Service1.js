@@ -60,16 +60,16 @@ export default function Service1() {
                                 <SwiperSlide>
                                     <div className="service-box-items">
                                         <div className="icon">
-                                            <img src="/assets/img/service/icon/s-icon-1.svg" alt="icon-img" />
+                                            <img src="/assets/img/service/icon/house-1.png" alt="icon-img"  style={{width:"40px"}}/>
                                         </div>
                                         <div className="content">
                                             <h4>
                                                 <Link href="/">
-                                                    Database Security
+                                                About My Property
                                                 </Link>
                                             </h4>
                                             <p>
-                                                Mauris ultrices ligula eget volutpat aliquet nullam
+                                            Aenean sollicitudin, lorem quis bibendum auctor, nisi elit conseat ipsum, nec sagittis sem nibh.
                                             </p>
                                             <Link href="/" className="theme-btn-2 mt-3">
                                                 read More
@@ -81,16 +81,16 @@ export default function Service1() {
                                 <SwiperSlide>
                                     <div className="service-box-items">
                                         <div className="icon">
-                                            <img src="/assets/img/service/icon/s-icon-2.svg" alt="icon-img" />
+                                             <img src="/assets/img/service/icon/house-1.png" alt="icon-img"  style={{width:"40px"}}/>
                                         </div>
                                         <div className="content">
                                             <h4>
                                                 <Link href="/">
-                                                    IT Consultancy
+                                                Read Latest News
                                                 </Link>
                                             </h4>
                                             <p>
-                                                Mauris ultrices ligula eget volutpat aliquet nullam
+                                            Aenean sollicitudin, lorem quis bibendum auctor, nisi elit conseat ipsum, nec sagittis sem nibh.
                                             </p>
                                             <Link href="/" className="theme-btn-2 mt-3">
                                                 read More
@@ -102,16 +102,16 @@ export default function Service1() {
                                 <SwiperSlide>
                                     <div className="service-box-items">
                                         <div className="icon">
-                                            <img src="/assets/img/service/icon/s-icon-3.svg" alt="icon-img" />
+                                        <img src="/assets/img/service/icon/house-1.png" alt="icon-img"  style={{width:"40px"}}/>
                                         </div>
                                         <div className="content">
                                             <h4>
                                                 <Link href="/">
-                                                    Cyber Security
+                                                Check Articles
                                                 </Link>
                                             </h4>
                                             <p>
-                                                Mauris ultrices ligula eget volutpat aliquet nullam
+                                            Aenean sollicitudin, lorem quis bibendum auctor, nisi elit conseat ipsum, nec sagittis sem nibh.
                                             </p>
                                             <Link href="/" className="theme-btn-2 mt-3">
                                                 read More
@@ -123,16 +123,39 @@ export default function Service1() {
                                 <SwiperSlide>
                                     <div className="service-box-items">
                                         <div className="icon">
-                                            <img src="/assets/img/service/icon/s-icon-4.svg" alt="icon-img" />
+                                        <img src="/assets/img/service/icon/house-1.png" alt="icon-img"  style={{width:"40px"}}/>
                                         </div>
                                         <div className="content">
                                             <h4>
                                                 <Link href="/">
-                                                    App Development
+                                                User Guides
                                                 </Link>
                                             </h4>
                                             <p>
-                                                Mauris ultrices ligula eget volutpat aliquet nullam
+                                            Aenean sollicitudin, lorem quis bibendum auctor, nisi elit conseat ipsum, nec sagittis sem nibh.
+                                            </p>
+                                            <Link href="/" className="theme-btn-2 mt-3">
+                                                read More
+                                                <i className="fa-solid fa-arrow-right-long" />
+                                            </Link>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+                               
+
+                                <SwiperSlide>
+                                    <div className="service-box-items">
+                                        <div className="icon">
+                                        <img src="/assets/img/service/icon/house-1.png" alt="icon-img"  style={{width:"40px"}}/>
+                                        </div>
+                                        <div className="content">
+                                            <h4>
+                                                <Link href="/">
+                                                Perfect Tools
+                                                </Link>
+                                            </h4>
+                                            <p>
+                                            Aenean sollicitudin, lorem quis bibendum auctor, nisi elit conseat ipsum, nec sagittis sem nibh.
                                             </p>
                                             <Link href="/" className="theme-btn-2 mt-3">
                                                 read More
@@ -144,16 +167,16 @@ export default function Service1() {
                                 <SwiperSlide>
                                     <div className="service-box-items">
                                         <div className="icon">
-                                            <img src="/assets/img/service/icon/s-icon-1.svg" alt="icon-img" />
+                                             <img src="/assets/img/service/icon/house-1.png" alt="icon-img"  style={{width:"40px"}}/>
                                         </div>
                                         <div className="content">
                                             <h4>
                                                 <Link href="/">
-                                                    Database Security
+                                                Search in Click
                                                 </Link>
                                             </h4>
                                             <p>
-                                                Mauris ultrices ligula eget volutpat aliquet nullam
+                                            Aenean sollicitudin, lorem quis bibendum auctor, nisi elit conseat ipsum, nec sagittis sem nibh.
                                             </p>
                                             <Link href="/" className="theme-btn-2 mt-3">
                                                 read More
@@ -165,16 +188,16 @@ export default function Service1() {
                                 <SwiperSlide>
                                     <div className="service-box-items">
                                         <div className="icon">
-                                            <img src="/assets/img/service/icon/s-icon-2.svg" alt="icon-img" />
+                                        <img src="/assets/img/service/icon/house-1.png" alt="icon-img"  style={{width:"40px"}}/>
                                         </div>
                                         <div className="content">
                                             <h4>
                                                 <Link href="/">
-                                                    IT Consultancy
+                                                User Control
                                                 </Link>
                                             </h4>
                                             <p>
-                                                Mauris ultrices ligula eget volutpat aliquet nullam
+                                            Aenean sollicitudin, lorem quis bibendum auctor, nisi elit conseat ipsum, nec sagittis sem nibh.
                                             </p>
                                             <Link href="/" className="theme-btn-2 mt-3">
                                                 read More
@@ -186,121 +209,16 @@ export default function Service1() {
                                 <SwiperSlide>
                                     <div className="service-box-items">
                                         <div className="icon">
-                                            <img src="/assets/img/service/icon/s-icon-3.svg" alt="icon-img" />
+                                        <img src="/assets/img/service/icon/house-1.png" alt="icon-img"  style={{width:"40px"}}/>
                                         </div>
                                         <div className="content">
                                             <h4>
                                                 <Link href="/">
-                                                    Cyber Security
+                                                5 Star Support
                                                 </Link>
                                             </h4>
                                             <p>
-                                                Mauris ultrices ligula eget volutpat aliquet nullam
-                                            </p>
-                                            <Link href="/" className="theme-btn-2 mt-3">
-                                                read More
-                                                <i className="fa-solid fa-arrow-right-long" />
-                                            </Link>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <div className="service-box-items">
-                                        <div className="icon">
-                                            <img src="/assets/img/service/icon/s-icon-4.svg" alt="icon-img" />
-                                        </div>
-                                        <div className="content">
-                                            <h4>
-                                                <Link href="/">
-                                                    App Development
-                                                </Link>
-                                            </h4>
-                                            <p>
-                                                Mauris ultrices ligula eget volutpat aliquet nullam
-                                            </p>
-                                            <Link href="/" className="theme-btn-2 mt-3">
-                                                read More
-                                                <i className="fa-solid fa-arrow-right-long" />
-                                            </Link>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <div className="service-box-items">
-                                        <div className="icon">
-                                            <img src="/assets/img/service/icon/s-icon-1.svg" alt="icon-img" />
-                                        </div>
-                                        <div className="content">
-                                            <h4>
-                                                <Link href="/">
-                                                    Database Security
-                                                </Link>
-                                            </h4>
-                                            <p>
-                                                Mauris ultrices ligula eget volutpat aliquet nullam
-                                            </p>
-                                            <Link href="/" className="theme-btn-2 mt-3">
-                                                read More
-                                                <i className="fa-solid fa-arrow-right-long" />
-                                            </Link>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <div className="service-box-items">
-                                        <div className="icon">
-                                            <img src="/assets/img/service/icon/s-icon-2.svg" alt="icon-img" />
-                                        </div>
-                                        <div className="content">
-                                            <h4>
-                                                <Link href="/">
-                                                    IT Consultancy
-                                                </Link>
-                                            </h4>
-                                            <p>
-                                                Mauris ultrices ligula eget volutpat aliquet nullam
-                                            </p>
-                                            <Link href="/" className="theme-btn-2 mt-3">
-                                                read More
-                                                <i className="fa-solid fa-arrow-right-long" />
-                                            </Link>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <div className="service-box-items">
-                                        <div className="icon">
-                                            <img src="/assets/img/service/icon/s-icon-3.svg" alt="icon-img" />
-                                        </div>
-                                        <div className="content">
-                                            <h4>
-                                                <Link href="/">
-                                                    Cyber Security
-                                                </Link>
-                                            </h4>
-                                            <p>
-                                                Mauris ultrices ligula eget volutpat aliquet nullam
-                                            </p>
-                                            <Link href="/" className="theme-btn-2 mt-3">
-                                                read More
-                                                <i className="fa-solid fa-arrow-right-long" />
-                                            </Link>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <div className="service-box-items">
-                                        <div className="icon">
-                                            <img src="/assets/img/service/icon/s-icon-4.svg" alt="icon-img" />
-                                        </div>
-                                        <div className="content">
-                                            <h4>
-                                                <Link href="/">
-                                                    App Development
-                                                </Link>
-                                            </h4>
-                                            <p>
-                                                Mauris ultrices ligula eget volutpat aliquet nullam
+                                            Aenean sollicitudin, lorem quis bibendum auctor, nisi elit conseat ipsum, nec sagittis sem nibh.
                                             </p>
                                             <Link href="/" className="theme-btn-2 mt-3">
                                                 read More
