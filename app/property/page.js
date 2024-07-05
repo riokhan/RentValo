@@ -41,7 +41,7 @@ const swiperOptions = {
 };
 
 export default function Property() {
-  const [mainImage, setMainImage] = useState("/assets/img/header/home-1.jpg"); // Initial main image
+  const [mainImage, setMainImage] = useState(); // Initial main image
   const [activeItem, setActiveItem] = useState(1);
 
   const handleClick = (index) => {
@@ -61,7 +61,7 @@ export default function Property() {
   return (
     <>
       <Layout headerStyle={1} footerStyle={2}>
-        <section className="Project-details-section fix section-padding-property">
+        <section className="Project-details-section section-padding-property">
           <div className="container">
             <div className="project-details-wrapper">
               <div className="row">
@@ -186,38 +186,18 @@ export default function Property() {
                   </div>
                 </div>
                 <div className="col-lg-3">
-                  {/* <div className="details-content pt-1">
-                    <h3>Rent</h3> $2300/month
-                  </div> */}
-                  {/* <section
-                    className="about-section fix bg-cover"
-                    style={{
-                      backgroundImage:
-                        'url("assets/img/service/service-bg-2.jpg")',
-                      padding: "60px 0",
-                    }}
-                  >
-                    <div className="about-wrapper style-2">
-                      <div className="col-lg-6">
-                        <div className="about-image-items">
-                          <div className="counter-shape float-bob-y">
-                            <div className="icon">
-                              <img
-                                src="/assets/img/about/icon-1.svg"
-                                alt="icon-img"
-                              />
-                            </div>
-                            <div className="content">
-                              <h3>
-                                $<CounterUp count={2300} />
-                                /month
-                              </h3>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </section> */}
+                <div className="main-sidebar">
+<div className="single-sidebar-widget Test">
+<div >
+<div >
+<img src="/assets/img/about/icon-1.svg" alt="icon-img" />
+</div>
+<div className="content">
+<h3>$<CounterUp count={2300} />/month</h3>
+</div>
+</div>
+</div>   
+</div>
 
                   <div className="main-sidebar">
                     <div className="single-sidebar-widget">

@@ -8008,6 +8008,12 @@ background-size: cover;
   transition: filter 0.5s ease; /* Smooth transition for filter */
 }
 
+.main-sidebar .test {
+  padding: 40px 40px;
+  background-color: var(--bg);
+  margin-bottom: 30px;
+}
+ 
 .testimonial-wrapper-2 .tesimonial-area .tesimonial-card-items:hover img {
   filter: invert(39%) sepia(25%) saturate(2962%) hue-rotate(146deg) brightness(90%) contrast(89%); /* Adjusted filter values */
 }
