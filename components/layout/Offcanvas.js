@@ -24,15 +24,15 @@ export default function Offcanvas({
                                     </button>
                                 </div>
                             </div>
-                            <p className="text d-none d-lg-block">
+                            {/* <p className="text d-none d-lg-block">
                                 Nullam dignissim, ante scelerisque the  is euismod fermentum odio sem semper the is erat, a feugiat leo urna eget eros. Duis Aenean a imperdiet risus.
-                            </p>
+                            </p> */}
                             <div className="d-none d-md-block d-lg-none">
                                 <MobileMenu />
                             </div>
 
                             <div className="offcanvas__contact">
-                                <h4>Contact Info</h4>
+                                {/* <h4>Contact Info</h4> */}
                                 {/* <ul>
                                     <li className="d-flex align-items-center">
                                         <div className="offcanvas__contact-icon">
@@ -68,7 +68,7 @@ export default function Offcanvas({
                                     </li>
                                 </ul> */}
                                 <MobileMenu />
-                                <div className="header-button mt-4">
+                                {/* <div className="header-button mt-4">
                                     <Link href="/contact" className="theme-btn text-center">
                                         <span>get A Quote<i className="fa-solid fa-arrow-right-long" /></span>
                                     </Link>
@@ -78,7 +78,7 @@ export default function Offcanvas({
                                     <Link href="#"><i className="fab fa-twitter" /></Link>
                                     <Link href="#"><i className="fab fa-youtube" /></Link>
                                     <Link href="#"><i className="fab fa-linkedin-in" /></Link>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>
