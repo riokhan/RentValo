@@ -34,7 +34,7 @@ export default function Category() {
                                 </div>
                                 <div className="team-content text-center">
                                     <h3>
-                                        <Link href="/team-details">Luxury Living</Link>
+                                        <Link href="/listing">Luxury Living</Link>
                                     </h3>
                                     <p>High-end amenities</p>
                                 </div>
@@ -55,7 +55,7 @@ export default function Category() {
                                 </div>
                                 <div className="team-content text-center">
                                     <h3>
-                                        <Link href="/team-details">Family Homes</Link>
+                                        <Link href="/listing">Family Homes</Link>
                                     </h3>
                                     <p>Spacious and comfortable</p>
                                 </div>
@@ -76,7 +76,7 @@ export default function Category() {
                                 </div>
                                 <div className="team-content text-center">
                                     <h3>
-                                        <Link href="/team-details">Modern Apartments</Link>
+                                        <Link href="/listing">Modern Apartments</Link>
                                     </h3>
                                     <p>Stylish and contemporary</p>
                                 </div>
@@ -97,7 +97,7 @@ export default function Category() {
                                 </div>
                                 <div className="team-content text-center">
                                     <h3>
-                                        <Link href="/team-details">Cozy Studios</Link>
+                                        <Link href="/listing">Cozy Studios</Link>
                                     </h3>
                                     <p>Affordable and compact</p>
                                 </div>

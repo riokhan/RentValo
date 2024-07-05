@@ -46,7 +46,7 @@ export default function Hero2() {
                         </div>
                         <div className="col-lg-4">
                             <div className="hero-image wow fadeInUp" data-wow-delay=".4s">
-                                <img src="/assets/img/hero/banner33.png" alt="hero-img" />
+                                <img src="/assets/img/hero/banner33.jpg" alt="hero-img" />
                                 {/* <div className="border-circle">
                                     <img src="https://infoteknextjs.vercel.app/assets/img/hero/hero-2.png" alt="shape-img" />
                                 </div> */}

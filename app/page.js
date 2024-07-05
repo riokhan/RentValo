@@ -41,12 +41,14 @@ export default function Home() {
                 <Hero2 />
                 {/* <Brand4 /> */}
                 <Brand1 />
+                <Category />
                 <About2 />
+                
                 <Service1 />
                 {/* <Achievement2 />  */}
                 {/* <Service4 /> */}
                 {/* <Testimonial2 /> */}
-                <Category />
+                
                 <Testimonial4 />
                 <Faqdetails />
                 {/* <Project4 /> */}
