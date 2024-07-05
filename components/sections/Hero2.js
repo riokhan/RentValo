@@ -22,7 +22,7 @@ export default function Hero2() {
                     <img src="/assets/img/hero/frame.png" alt="shape-img" />
                 </div>
                 <div className="circle-shape">
-                    <img src="/assets/img/choose/circle.png" alt="shape-img" />
+                    <img src="/assets/img/choose/circle1.png" alt="shape-img" />
                 </div> */}
                 <div className="container">
                     <div className="row g-4 align-items-center">
