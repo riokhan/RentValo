@@ -43,7 +43,7 @@ export default function Service1() {
                 <div className="container">
                     <div className="section-title-area">
                         <div className="section-title">
-                            <span className="wow fadeInUp">IT services</span>
+                            {/* <span className="wow fadeInUp">IT services</span> */}
                             <h2 className="wow fadeInUp" data-wow-delay=".3s">
                             Navigate Your Digital Transformation 
                             <br /> Journey With Us
@@ -64,14 +64,14 @@ export default function Service1() {
                                         </div>
                                         <div className="content">
                                             <h4>
-                                                <Link href="/service-details">
+                                                <Link href="/">
                                                     Database Security
                                                 </Link>
                                             </h4>
                                             <p>
                                                 Mauris ultrices ligula eget volutpat aliquet nullam
                                             </p>
-                                            <Link href="/service-details" className="theme-btn-2 mt-3">
+                                            <Link href="/" className="theme-btn-2 mt-3">
                                                 read More
                                                 <i className="fa-solid fa-arrow-right-long" />
                                             </Link>
@@ -85,14 +85,14 @@ export default function Service1() {
                                         </div>
                                         <div className="content">
                                             <h4>
-                                                <Link href="/service-details">
+                                                <Link href="/">
                                                     IT Consultancy
                                                 </Link>
                                             </h4>
                                             <p>
                                                 Mauris ultrices ligula eget volutpat aliquet nullam
                                             </p>
-                                            <Link href="/service-details" className="theme-btn-2 mt-3">
+                                            <Link href="/" className="theme-btn-2 mt-3">
                                                 read More
                                                 <i className="fa-solid fa-arrow-right-long" />
                                             </Link>
@@ -106,14 +106,14 @@ export default function Service1() {
                                         </div>
                                         <div className="content">
                                             <h4>
-                                                <Link href="/service-details">
+                                                <Link href="/">
                                                     Cyber Security
                                                 </Link>
                                             </h4>
                                             <p>
                                                 Mauris ultrices ligula eget volutpat aliquet nullam
                                             </p>
-                                            <Link href="/service-details" className="theme-btn-2 mt-3">
+                                            <Link href="/" className="theme-btn-2 mt-3">
                                                 read More
                                                 <i className="fa-solid fa-arrow-right-long" />
                                             </Link>
@@ -127,14 +127,14 @@ export default function Service1() {
                                         </div>
                                         <div className="content">
                                             <h4>
-                                                <Link href="/service-details">
+                                                <Link href="/">
                                                     App Development
                                                 </Link>
                                             </h4>
                                             <p>
                                                 Mauris ultrices ligula eget volutpat aliquet nullam
                                             </p>
-                                            <Link href="/service-details" className="theme-btn-2 mt-3">
+                                            <Link href="/" className="theme-btn-2 mt-3">
                                                 read More
                                                 <i className="fa-solid fa-arrow-right-long" />
                                             </Link>
@@ -148,14 +148,14 @@ export default function Service1() {
                                         </div>
                                         <div className="content">
                                             <h4>
-                                                <Link href="/service-details">
+                                                <Link href="/">
                                                     Database Security
                                                 </Link>
                                             </h4>
                                             <p>
                                                 Mauris ultrices ligula eget volutpat aliquet nullam
                                             </p>
-                                            <Link href="/service-details" className="theme-btn-2 mt-3">
+                                            <Link href="/" className="theme-btn-2 mt-3">
                                                 read More
                                                 <i className="fa-solid fa-arrow-right-long" />
                                             </Link>
@@ -169,14 +169,14 @@ export default function Service1() {
                                         </div>
                                         <div className="content">
                                             <h4>
-                                                <Link href="/service-details">
+                                                <Link href="/">
                                                     IT Consultancy
                                                 </Link>
                                             </h4>
                                             <p>
                                                 Mauris ultrices ligula eget volutpat aliquet nullam
                                             </p>
-                                            <Link href="/service-details" className="theme-btn-2 mt-3">
+                                            <Link href="/" className="theme-btn-2 mt-3">
                                                 read More
                                                 <i className="fa-solid fa-arrow-right-long" />
                                             </Link>
@@ -190,14 +190,14 @@ export default function Service1() {
                                         </div>
                                         <div className="content">
                                             <h4>
-                                                <Link href="/service-details">
+                                                <Link href="/">
                                                     Cyber Security
                                                 </Link>
                                             </h4>
                                             <p>
                                                 Mauris ultrices ligula eget volutpat aliquet nullam
                                             </p>
-                                            <Link href="/service-details" className="theme-btn-2 mt-3">
+                                            <Link href="/" className="theme-btn-2 mt-3">
                                                 read More
                                                 <i className="fa-solid fa-arrow-right-long" />
                                             </Link>
@@ -211,14 +211,14 @@ export default function Service1() {
                                         </div>
                                         <div className="content">
                                             <h4>
-                                                <Link href="/service-details">
+                                                <Link href="/">
                                                     App Development
                                                 </Link>
                                             </h4>
                                             <p>
                                                 Mauris ultrices ligula eget volutpat aliquet nullam
                                             </p>
-                                            <Link href="/service-details" className="theme-btn-2 mt-3">
+                                            <Link href="/" className="theme-btn-2 mt-3">
                                                 read More
                                                 <i className="fa-solid fa-arrow-right-long" />
                                             </Link>
@@ -232,14 +232,14 @@ export default function Service1() {
                                         </div>
                                         <div className="content">
                                             <h4>
-                                                <Link href="/service-details">
+                                                <Link href="/">
                                                     Database Security
                                                 </Link>
                                             </h4>
                                             <p>
                                                 Mauris ultrices ligula eget volutpat aliquet nullam
                                             </p>
-                                            <Link href="/service-details" className="theme-btn-2 mt-3">
+                                            <Link href="/" className="theme-btn-2 mt-3">
                                                 read More
                                                 <i className="fa-solid fa-arrow-right-long" />
                                             </Link>
@@ -253,14 +253,14 @@ export default function Service1() {
                                         </div>
                                         <div className="content">
                                             <h4>
-                                                <Link href="/service-details">
+                                                <Link href="/">
                                                     IT Consultancy
                                                 </Link>
                                             </h4>
                                             <p>
                                                 Mauris ultrices ligula eget volutpat aliquet nullam
                                             </p>
-                                            <Link href="/service-details" className="theme-btn-2 mt-3">
+                                            <Link href="/" className="theme-btn-2 mt-3">
                                                 read More
                                                 <i className="fa-solid fa-arrow-right-long" />
                                             </Link>
@@ -274,14 +274,14 @@ export default function Service1() {
                                         </div>
                                         <div className="content">
                                             <h4>
-                                                <Link href="/service-details">
+                                                <Link href="/">
                                                     Cyber Security
                                                 </Link>
                                             </h4>
                                             <p>
                                                 Mauris ultrices ligula eget volutpat aliquet nullam
                                             </p>
-                                            <Link href="/service-details" className="theme-btn-2 mt-3">
+                                            <Link href="/" className="theme-btn-2 mt-3">
                                                 read More
                                                 <i className="fa-solid fa-arrow-right-long" />
                                             </Link>
@@ -295,14 +295,14 @@ export default function Service1() {
                                         </div>
                                         <div className="content">
                                             <h4>
-                                                <Link href="/service-details">
+                                                <Link href="/">
                                                     App Development
                                                 </Link>
                                             </h4>
                                             <p>
                                                 Mauris ultrices ligula eget volutpat aliquet nullam
                                             </p>
-                                            <Link href="/service-details" className="theme-btn-2 mt-3">
+                                            <Link href="/" className="theme-btn-2 mt-3">
                                                 read More
                                                 <i className="fa-solid fa-arrow-right-long" />
                                             </Link>
@@ -312,9 +312,9 @@ export default function Service1() {
                             </Swiper>
                         </div>
                         <div className="service-text wow fadeInUp" data-wow-delay=".4s">
-                            <h6>
+                            {/* <h6>
                                 Need Any Kind Of IT Solution For Your Business.  <Link href="/service">View Services </Link>
-                            </h6>
+                            </h6> */}
                         </div>
                     </div>
                 </div>

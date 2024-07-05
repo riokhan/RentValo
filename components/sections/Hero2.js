@@ -5,7 +5,7 @@ import VideoPopup from '../elements/VideoPopup'
 export default function Hero2() {
     return (
         <>
-            <section className="hero-section fix hero-1 hero-2 bg-cover" style={{ backgroundImage: 'url("assets/img/hero/hero-bg-2.jpg")' }}>
+            <section className="hero-section fix hero-1 hero-2 bg-cover" style={{ backgroundImage: 'url("https://media.istockphoto.com/id/1037437274/vector/halftone-abstract-background-vector-dot-pattern-gradient.jpg?s=612x612&w=0&k=20&c=TwYad5sVzvnCZDVqKY22dJVG7h68jwM8hDykGIPqqzo=")' }}>
                 {/* <div className="line-shape-2">
                     <img src="/assets/img/hero/line-shape-2.png" alt="shape-img" />
                 </div>
@@ -37,7 +37,7 @@ export default function Hero2() {
                                 </p>
                                 <div className="hero-button">
                                     <Link href="/listing" className="theme-btn wow fadeInUp" data-wow-delay=".8s">
-                                        Explore More
+                                        Find My Room
                                         <i className="fa-solid fa-arrow-right-long" />
                                     </Link>
                                     <VideoPopup style={3} />

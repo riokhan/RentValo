@@ -11,8 +11,8 @@ Version: 1.0.0
   --body: #fff;
   --black: #000;
   --white: #fff;
-  --theme: #384BFF;
-  --theme2: #384BFF;
+  --theme: #044895;
+  --theme2: #044895;
   --header: #0F0D1D;
   --text: #585858;
   --text-2: #ffffffcc;
@@ -45,7 +45,7 @@ Version: 1.0.0
 }
 .theme-btn::before {
   content: "";
-  background-color: var(--header);
+  background-color: #786008;
   width: 0;
   height: 50%;
   position: absolute;
@@ -57,7 +57,7 @@ Version: 1.0.0
 }
 .theme-btn::after {
   content: "";
-  background-color: var(--header);
+  background-color: #786008;
   width: 0;
   height: 50%;
   position: absolute;
@@ -6613,10 +6613,10 @@ input.main-search-input::placeholder {
   width: 100%;
   height: 100%;
   content: "";
-  background: 
+  background: var(--theme);
   /* linear-gradient(180deg, #384BFF -23.85%, #6324B3 100%), */
-  url('https://noblq.com/wp-content/themes/noblq/assets/img/home/technology/card-bg.png') no-repeat center center;
-background-size: cover;
+  /* url('https://noblq.com/wp-content/themes/noblq/assets/img/home/technology/card-bg.png') no-repeat center center;
+background-size: cover; */
   transform: scale(1, 0);
   transition: transform 500ms ease;
   transform-origin: bottom center;
