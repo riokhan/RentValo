@@ -7533,7 +7533,7 @@ background-size: cover;
 }
 .single-team-items .team-content {
   padding: 50px 20px 30px;
-  background-color: var(--bg2);
+  background-color: #044895;
   clip-path: polygon(100% 0, 100% 100%, 0 98%, 0 17%);
   margin-top: -45px;
   position: relative;
@@ -7550,7 +7550,9 @@ background-size: cover;
   color: var(--white);
 }
 .single-team-items:hover .team-content {
-  background-color: var(--theme);
+  
+    background-color: #052034;
+  
 }
 .single-team-items:hover .team-image {
   position: relative;

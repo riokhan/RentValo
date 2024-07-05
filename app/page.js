@@ -40,8 +40,9 @@ export default function Home() {
                 {/* <Hero1 /> */}
                 <Hero2 />
                 {/* <Brand4 /> */}
-                <Brand1 />
                 <Category />
+                <Brand1 />
+                
                 <About2 />
                 
                 <Service1 />
