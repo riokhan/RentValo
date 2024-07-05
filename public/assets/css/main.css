@@ -7997,11 +7997,11 @@ background-size: cover;
 }
 .testimonial-wrapper-2 .tesimonial-area .tesimonial-card-items {
   padding: 50px 30px;
-  background-color: #055E57;
+  background-color: #FFFFFF;
   border-radius: 12px;
   position: relative;
   margin-top: 30px;
-  height: 29vh;
+  /* height: 29vh; */
 }
 
 .testimonial-wrapper-2 .tesimonial-area .tesimonial-card-items img {
@@ -8011,26 +8011,26 @@ background-size: cover;
 .testimonial-wrapper-2 .tesimonial-area .tesimonial-card-items:hover img {
   filter: invert(39%) sepia(25%) saturate(2962%) hue-rotate(146deg) brightness(90%) contrast(89%); /* Adjusted filter values */
 }
-.testimonial-wrapper-2 .tesimonial-area .tesimonial-card-items p {
+/* .testimonial-wrapper-2 .tesimonial-area .tesimonial-card-items p {
   display: none;
   padding-top:20px ;
-}
-
+} */
+/* 
 .testimonial-wrapper-2 .tesimonial-area .tesimonial-card-items h4 {
   color:#ffffff;
   padding-top:20px ;
 }
 .testimonial-wrapper-2 .tesimonial-area .tesimonial-card-items:hover h4 {
   color:black;
-}
-
+} */
+/* 
 .testimonial-wrapper-2 .tesimonial-area .tesimonial-card-items:hover {
   background-color: white;
 }
 
 .testimonial-wrapper-2 .tesimonial-area .tesimonial-card-items:hover p {
   display: block;
-}
+} */
 
 
 .imgnew{

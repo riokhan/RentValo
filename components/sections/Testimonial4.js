@@ -42,17 +42,17 @@ export default function Testimonial4() {
                 <div className="container">
                     <div className="testimonial-wrapper-2">
                         <div className="row">
-                            {/* <div className="col-lg-5 wow fadeInUp" data-wow-delay=".4s">
+                            <div className="col-lg-5 wow fadeInUp" data-wow-delay=".4s">
                                 <div className="tesimonial-image">
                                     <img src="/assets/img/testimonial/04.jpg" alt="img" />
                                 </div>
-                            </div> */}
+                            </div>
                             <div className="col-lg-6 mt-4 mt-lg-0">
                                 <div className="tesimonial-area">
                                     <div className="section-title">
                                         {/* <span className="wow fadeInUp" data-wow-delay=".3s">Your digital transformation starts here</span> */}
                                         <h2 className="wow fadeInUp" data-wow-delay=".5s">
-                                        Your digital transformation starts here
+                                            Your Perfect Home Awaits
                                         </h2>
                                     </div>
                                     <div className="swiper testimonial-slider-3">
@@ -70,7 +70,7 @@ export default function Testimonial4() {
                                                         <i className="fas fa-star" />
                                                     </div>
                                                     <p>
-                                                        when an unknown printer took away galley of type aawer awtnd there are scrambled it to make a type many  but also the leap into
+                                                        This app made finding my new home so easy!, and I could filter to find exactly what I was looking for!
                                                     </p>
                                                     <div className="client-info-items">
                                                         <div className="thumb">
@@ -96,7 +96,7 @@ export default function Testimonial4() {
                                                         <i className="fas fa-star" />
                                                     </div>
                                                     <p>
-                                                        when an unknown printer took away galley of type aawer awtnd there are scrambled it to make a type many  but also the leap into
+                                                    It saved me a lot of time and effort, and I found the perfect place without leaving my home.
                                                     </p>
                                                     <div className="client-info-items">
                                                         <div className="thumb">
@@ -122,7 +122,7 @@ export default function Testimonial4() {
                                                         <i className="fas fa-star" />
                                                     </div>
                                                     <p>
-                                                        when an unknown printer took away galley of type aawer awtnd there are scrambled it to make a type many  but also the leap into
+                                                    The customer service is top-notch. The app’s detailed filters also helped me find a home that matched all my preferences.
                                                     </p>
                                                     <div className="client-info-items">
                                                         <div className="thumb">
@@ -148,7 +148,7 @@ export default function Testimonial4() {
                                                         <i className="fas fa-star" />
                                                     </div>
                                                     <p>
-                                                        when an unknown printer took away galley of type aawer awtnd there are scrambled it to make a type many  but also the leap into
+                                                    The app's detailed neighborhood information helped me choose a safe and convenient location for my family.
                                                     </p>
                                                     <div className="client-info-items">
                                                         <div className="thumb">
