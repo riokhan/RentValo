@@ -10,11 +10,11 @@ export default function Category() {
                         <div className="section-title">
                             <span className="wow fadeInUp">Team Members</span>
                             <h2 className="wow fadeInUp" data-wow-delay=".3s">
-                                Our Dedicated Team <br /> Members
+                                Find your perfect home by Property Type
                             </h2>
                         </div>
                         <Link href="/team" className="theme-btn wow fadeInUp" data-wow-delay=".5s">
-                            All Member
+                            View All Property
                             <i className="fa-solid fa-arrow-right-long" />
                         </Link>
                     </div>
@@ -34,9 +34,9 @@ export default function Category() {
                                 </div>
                                 <div className="team-content text-center">
                                     <h3>
-                                        <Link href="/team-details">Marvin McKinney</Link>
+                                        <Link href="/team-details">Luxury Living</Link>
                                     </h3>
-                                    <p>Web Designer</p>
+                                    <p>High-end amenities</p>
                                 </div>
                             </div>
                         </div>
@@ -55,9 +55,9 @@ export default function Category() {
                                 </div>
                                 <div className="team-content text-center">
                                     <h3>
-                                        <Link href="/team-details">Bessie Cooper</Link>
+                                        <Link href="/team-details">Family Homes</Link>
                                     </h3>
-                                    <p>President of Sales</p>
+                                    <p>Spacious and comfortable</p>
                                 </div>
                             </div>
                         </div>
@@ -76,9 +76,9 @@ export default function Category() {
                                 </div>
                                 <div className="team-content text-center">
                                     <h3>
-                                        <Link href="/team-details">Dianne Russell</Link>
+                                        <Link href="/team-details">Modern Apartments</Link>
                                     </h3>
-                                    <p>Marketing manager</p>
+                                    <p>Stylish and contemporary</p>
                                 </div>
                             </div>
                         </div>
@@ -97,9 +97,30 @@ export default function Category() {
                                 </div>
                                 <div className="team-content text-center">
                                     <h3>
-                                        <Link href="/team-details">Dianne Russell</Link>
+                                        <Link href="/team-details">Cozy Studios</Link>
                                     </h3>
-                                    <p>Marketing manager</p>
+                                    <p>Affordable and compact</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-xl-3 col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".7s">
+                            <div className="team-card-items">
+                                <div className="team-image">
+                                    <img src="/assets/img/team/03.jpg" alt="team-img" />
+                                    <div className="social-profile">
+                                        <span className="plus-btn"><i className="fas fa-share-alt" /></span>
+                                        <ul>
+                                            <li><Link href="#"><i className="fab fa-facebook-f" /></Link></li>
+                                            <li><Link href="#"><i className="fa-brands fa-twitter" /></Link></li>
+                                            <li><Link href="#"><i className="fab fa-linkedin-in" /></Link></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div className="team-content text-center">
+                                    <h3>
+                                        <Link href="/team-details">Eco-Friendly Homes</Link>
+                                    </h3>
+                                    <p>Sustainable living</p>
                                 </div>
                             </div>
                         </div>
