@@ -13,11 +13,7 @@ export default function BookingPage() {
                   <div className="col-lg-6">
                     <div className="contact-left-items">
                       <div className="contact-info-area-2 newbook">
-                        <img
-                          src="/assets/img/1.jpg"
-                          alt="img"
-                          style={{ width: "100%", height: "600px" }}
-                        />
+                        <img src="/assets/img/1.jpg" alt="img" />
                       </div>
                       {/* <div className="video-image">
                         <img src="/assets/img/video.jpg" alt="img" />
