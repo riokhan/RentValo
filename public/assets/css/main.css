@@ -8310,3 +8310,39 @@ color: white;
   background-color: none !important;
   padding: 0px !important;
 }
+
+.Filter-slider__range[data-v-0e247d3d] {
+  width: 100%;
+  position: relative;
+  padding: 10px 0;
+}
+.u-color-white {
+  color: #fff;
+}
+.Filter-slider__range-label[data-v-0e247d3d] {
+  display: block;
+  position: absolute;
+  top: 0;
+}
+.p, .p2 {
+  font-family: Benton-Book, Arial, Sans-Serif;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+}
+.p2 {
+  font-size: 14px;
+  line-height: 24px;
+}
+.Filter-slider__range-label--max[data-v-0e247d3d] {
+  right: 0;
+}
+.new-map{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}

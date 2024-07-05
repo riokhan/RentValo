@@ -4,6 +4,7 @@ import { useState } from "react";
 import Button from "@mui/material/Button";
 
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
+import Layout from "@/components/layout/Layout"
 export default function Listing({ handleSearch }) {
   const [setActiveItem] = useState(1);
 
@@ -243,9 +244,9 @@ export default function Listing({ handleSearch }) {
 
   return (
     <>
-      {/* <Layout headerStyle={1} footerStyle={2} breadcrumbTitle="Services Details"> */}
+      <Layout headerStyle={4} footerStyle={4}>
 
-      <section className="service-details-section fix">
+      {/* <section className="service-details-section fix">
         <div className="container-fluid">
           <div className="news-details-area">
             <div className="row g-5">
@@ -515,12 +516,12 @@ export default function Listing({ handleSearch }) {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="service-details-section fix">
         <div className="container-fluid">
           <div className="service-details-wrapper">
-            <div className="row g-4">
+            <div className="row g-4 section-padding">
               <div className="col-12 col-lg-7 col-md-6 order-1 order-md-1">
                 {/* <div className="main-sidebar">
                                         <div className="single-sidebar-widget">
@@ -595,7 +596,7 @@ export default function Listing({ handleSearch }) {
                                         </div>
                                     </div>
                                     </div>     */}
-                  <div className="section-title-area">
+                  {/* <div className="section-title-area">
                     <div className="section-title">
                       <span className="wow fadeInUp">
                         Viewing 24 of 732,748 Homes for Sale in All locations
@@ -609,11 +610,8 @@ export default function Listing({ handleSearch }) {
                         area.
                       </h6>
                     </div>
-                    {/* <div className="array-button">
-                                        <button className="array-prev"><i className="fal fa-arrow-right" /></button>
-                                        <button className="array-next"><i className="fal fa-arrow-left" /></button>
-                                    </div> */}
-                  </div>
+                
+                  </div> */}
                   <div
                     className="dropdown"
                     style={{
@@ -1187,7 +1185,7 @@ export default function Listing({ handleSearch }) {
         </div>
       </section>
 
-      {/* </Layout> */}
+      </Layout>
     </>
   );
 }

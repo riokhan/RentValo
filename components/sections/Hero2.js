@@ -5,7 +5,7 @@ import VideoPopup from '../elements/VideoPopup'
 export default function Hero2() {
     return (
         <>
-            <section className="hero-section fix hero-1 hero-2 bg-cover" style={{ backgroundImage: 'url("/assets/img/service/service-bg-2.jpg")' }}>
+            <section className="hero-section fix hero-1 hero-2 bg-cover " style={{ backgroundImage: 'url("/assets/img/service/service-bg-2.jpg")' }}>
                 {/* <div className="line-shape-2">
                     <img src="/assets/img/hero/line-shape-2.png" alt="shape-img" />
                 </div>

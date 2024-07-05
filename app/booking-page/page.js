@@ -114,10 +114,10 @@ export default function BookingPage() {
                             className="col-lg-7 wow fadeInUp"
                             data-wow-delay=".9s"
                           >
-                            <button type="submit" className="theme-btn">
+                        <Link href="/" >  <button type="submit" className="theme-btn">
                               Send Message{" "}
                               <i className="fa-solid fa-arrow-right-long" />
-                            </button>
+                            </button> </Link>  
                           </div>
                         </div>
                       </form>
