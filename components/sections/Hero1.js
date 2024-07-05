@@ -9,7 +9,7 @@ export default function Hero1() {
                 <div className="text-transparent">
                     <h2>Valoteam</h2>
                 </div>
-                <div className="line-shape">
+                {/* <div className="line-shape">
                     <img src="/assets/img/hero/line-shape.png" alt="shape-img" />
                 </div>
                 <div className="dot-shape">
@@ -20,7 +20,7 @@ export default function Hero1() {
                 </div>
                 <div className="mask-shape wow fadeInRight" data-wow-delay=".7s">
                     <img src="/assets/img/hero/mask-shape.png" alt="shape-img" />
-                </div>
+                </div> */}
                 <div className="container">
                     <div className="row g-4 align-items-center">
                         <div className="col-lg-8">
@@ -43,7 +43,7 @@ export default function Hero1() {
                         </div>
                         <div className="col-lg-4">
                             <div className="hero-image wow fadeInUp" data-wow-delay=".4s">
-                                {/* <img src="/assets/img/hero/hero.png" alt="hero-img" /> */}
+                                <img src="https://infoteknextjs.vercel.app/assets/img/hero/hero-2.png" alt="hero-img" />
                             </div>
                         </div>
                     </div>
