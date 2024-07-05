@@ -301,17 +301,17 @@ export default function Listing({ handleSearch }) {
                             </label>
                             <div
                               data-v-0e247d3d=""
-                              class="Filter-slider__range u-color-white"
+                              className="Filter-slider__range u-color-white"
                             >
                               <span
                                 data-v-0e247d3d=""
-                                class="Filter-slider__range-label Filter-slider__range-label--min p2"
+                                className="Filter-slider__range-label Filter-slider__range-label--min p2"
                               >
                                 No Min
                               </span>
                               <span
                                 data-v-0e247d3d=""
-                                class="Filter-slider__range-label Filter-slider__range-label--max p2"
+                                className="Filter-slider__range-label Filter-slider__range-label--max p2"
                               >
                                 No Max
                               </span>
@@ -479,17 +479,17 @@ export default function Listing({ handleSearch }) {
                             </label>
                             <div
                               data-v-0e247d3d=""
-                              class="Filter-slider__range u-color-white"
+                              className="Filter-slider__range u-color-white"
                             >
                               <span
                                 data-v-0e247d3d=""
-                                class="Filter-slider__range-label Filter-slider__range-label--min p2"
+                                className="Filter-slider__range-label Filter-slider__range-label--min p2"
                               >
                                 No Min
                               </span>
                               <span
                                 data-v-0e247d3d=""
-                                class="Filter-slider__range-label Filter-slider__range-label--max p2"
+                                className="Filter-slider__range-label Filter-slider__range-label--max p2"
                               >
                                 No Max
                               </span>
