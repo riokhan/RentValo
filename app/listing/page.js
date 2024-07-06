@@ -2,10 +2,41 @@
 import Link from "next/link";
 import { useState } from "react";
 import Button from "@mui/material/Button";
-
+import Chip from '@mui/material/Chip';
+import Stack from '@mui/material/Stack';
+import FaceIcon from '@mui/icons-material/Face';
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 import Layout from "@/components/layout/Layout"
+import BedIcon from '@mui/icons-material/Bed';
+import BathtubIcon from '@mui/icons-material/Bathtub';
+
+
+import { Select, MenuItem, Checkbox, ListItemText } from '@mui/material';
+
+
+const CheckboxOption = ({ value, isChecked, children }) => (
+  <MenuItem value={value}>
+    <Checkbox checked={isChecked} />
+    <ListItemText primary={children} />
+  </MenuItem>
+);
+
+
 export default function Listing({ handleSearch }) {
+
+  const [currentValues, setCurrentValues] = useState([]);
+  const defaultValue = 'Beds & Baths';
+  const defaultValue1 = 'Home Type';
+  const defaultValue2 = 'Price Range';
+
+  const handleChange = (event) => {
+    const value = event.target.value;
+    setCurrentValues(
+      currentValues.includes(value)
+        ? currentValues.filter((item) => item !== value)
+        : [...currentValues, value]
+    );
+  };
   const [setActiveItem] = useState(1);
 
   const [isHovered, setIsHovered] = useState(false);
@@ -246,414 +277,84 @@ export default function Listing({ handleSearch }) {
     <>
       <Layout headerStyle={4} footerStyle={4}>
 
-      {/* <section className="service-details-section fix">
-        <div className="container-fluid">
-          <div className="news-details-area">
-            <div className="row g-5">
-              <div className="col-12 col-lg-12">
-                <div className="blog-post-details">
-                  <div
-                    className="post-featured-thumb bg-cover"
-                    style={{
-                      backgroundImage: 'url("assets/img/news/post-4.jpg")',
-                    }}
-                  />
-                  <div className="row tag-share-wrap mt-4 mb-5">
-                    <div className="col-lg-12 col-12 new-map">
-                      <div className="tagcloud">
-                        <a
-                          onClick={handleSearch}
-                          className="search-trigger search-icon"
-                        >
-                          <i className="fal fa-search" />
-                        </a>
-                        <Link href="">Buy Rent</Link>
+    
 
-                        <Link href="#" onClick={() => toggleDropdown("price")}>
-                          PRICE RANGE
-                        </Link>
-                        <div style={getDropdownStyles("price")}>
-                          <div style={rangeBarStyles}>
-                            <p style={{ color: "#fff" }}>Price</p>
-                            <p style={{ color: "#fff", marginTop: "10px" }}>
-                              Any
-                            </p>
-                            <input
-                              type="range"
-                              min="0"
-                              max="1000"
-                              step="10"
-                              name="min"
-                              value={priceRange.min}
-                              onChange={updatePriceRange}
-                              style={inputStyles}
-                            />
-                            <label
-                              style={{
-                                display: "block",
-                                marginTop: "10px",
-                                color: "#fff",
-                              }}
-                            >
-                              Price Range: ${priceRange.min} - ${priceRange.max}
-                            </label>
-                            <div
-                              data-v-0e247d3d=""
-                              className="Filter-slider__range u-color-white"
-                            >
-                              <span
-                                data-v-0e247d3d=""
-                                className="Filter-slider__range-label Filter-slider__range-label--min p2"
-                              >
-                                No Min
-                              </span>
-                              <span
-                                data-v-0e247d3d=""
-                                className="Filter-slider__range-label Filter-slider__range-label--max p2"
-                              >
-                                No Max
-                              </span>
-                            </div>
-                            <div>
-                              <button
-                                style={clearButtonStyles}
-                                onClick={clearPriceRange}
-                              >
-                                Clear
-                              </button>
-                              <button
-                                style={buttonStyles}
-                                onClick={applyPriceRange}
-                              >
-                                Apply
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-
-                        <Link href="#" onClick={() => toggleDropdown("beds")}>
-                          BEDS &amp; BATHS
-                        </Link>
-                        <div style={getDropdownStyles("beds")}>
-                          <div style={rangeBarStyles}>
-                            <p style={{ color: "#fff" }}>Beds</p>
-                            <input
-                              type="range"
-                              min="1"
-                              max="5"
-                              step="1"
-                              value={beds}
-                              onChange={updateBeds}
-                              style={inputStyles}
-                            />
-                            <p style={{ color: "#fff", marginTop: "10px" }}>
-                              Baths
-                            </p>
-                            <input
-                              type="range"
-                              min="1"
-                              max="5"
-                              step="1"
-                              value={baths}
-                              onChange={updateBaths}
-                              style={inputStyles}
-                            />
-                            <hr style={{ backgroundColor: "#fff" }} />
-                            <div>
-                              <button
-                                style={clearButtonStyles}
-                                onClick={clearBedsAndBaths}
-                              >
-                                Clear
-                              </button>
-                              <button
-                                style={buttonStyles}
-                                onClick={applyBedsAndBaths}
-                              >
-                                Apply
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-
-                        <Link
-                          href="#"
-                          onClick={() => toggleDropdown("homeTypePrice")}
-                        >
-                          HOME TYPE
-                        </Link>
-                        <div style={getDropdownStyles("homeTypePrice")}>
-                          <div style={rangeBarStyles}>
-                            <p style={{ color: "#fff" }}>Home Types</p>
-                            {homeTypeOptions.map((option, index) => (
-                              <label
-                                key={index}
-                                style={{
-                                  display: "block",
-                                  marginTop: "5px",
-                                  cursor: "pointer",
-                                }}
-                              >
-                                <input
-                                  type="checkbox"
-                                  checked={homeTypes[option]}
-                                  onChange={() => updateHomeType(option)}
-                                  style={{ marginRight: "5px" }}
-                                />
-                                {option}
-                              </label>
-                            ))}
-                            <p style={{ color: "#fff", marginTop: "10px" }}>
-                              Price Range
-                            </p>
-                            <input
-                              type="range"
-                              min="0"
-                              max="1000"
-                              step="10"
-                              name="min"
-                              value={homeTypePriceRange.min}
-                              onChange={updateHomeTypePriceRange}
-                              style={inputStyles}
-                            />
-                            <label
-                              style={{
-                                display: "block",
-                                marginTop: "10px",
-                                color: "#fff",
-                              }}
-                            >
-                              Price Range: ${homeTypePriceRange.min} - $
-                              {homeTypePriceRange.max}
-                            </label>
-                            <div>
-                              <button
-                                style={clearButtonStyles}
-                                onClick={clearHomeTypes}
-                              >
-                                Clear
-                              </button>
-                              <button
-                                style={buttonStyles}
-                                onClick={applyHomeTypes}
-                              >
-                                Apply
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-
-                        <Link
-                          href="#"
-                          onClick={() => toggleDropdown("filtersPrice")}
-                        >
-                          FILTERS
-                        </Link>
-                        <div style={getDropdownStyles("filtersPrice")}>
-                          <div style={rangeBarStyles}>
-                            <p style={{ color: "#fff" }}>Filters Price</p>
-                            <p style={{ color: "#fff", marginTop: "10px" }}>
-                              Any
-                            </p>
-                            <input
-                              type="range"
-                              min="0"
-                              max="1000"
-                              step="10"
-                              name="min"
-                              value={filtersPriceRange.min}
-                              onChange={updateFiltersPriceRange}
-                              style={inputStyles}
-                            />
-                            <label
-                              style={{
-                                display: "block",
-                                marginTop: "10px",
-                                color: "#fff",
-                              }}
-                            >
-                              Price Range: ${filtersPriceRange.min} - $
-                              {filtersPriceRange.max}
-                            </label>
-                            <div
-                              data-v-0e247d3d=""
-                              className="Filter-slider__range u-color-white"
-                            >
-                              <span
-                                data-v-0e247d3d=""
-                                className="Filter-slider__range-label Filter-slider__range-label--min p2"
-                              >
-                                No Min
-                              </span>
-                              <span
-                                data-v-0e247d3d=""
-                                className="Filter-slider__range-label Filter-slider__range-label--max p2"
-                              >
-                                No Max
-                              </span>
-                            </div>
-                            <div>
-                              <button
-                                style={clearButtonStyles}
-                                onClick={clearFiltersPriceRange}
-                              >
-                                Clear
-                              </button>
-                              <button
-                                style={buttonStyles}
-                                onClick={applyFiltersPriceRange}
-                              >
-                                Apply
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
-
-      <section className="service-details-section fix">
+      <section className="service-details-section fix  section-padding">
         <div className="container-fluid">
           <div className="service-details-wrapper">
+            
             <div className="row g-4 section-padding">
               <div className="col-12 col-lg-7 col-md-6 order-1 order-md-1">
-                {/* <div className="main-sidebar">
-                                        <div className="single-sidebar-widget">
-                                            <div className="wid-title">
-                                                <h3>All Services</h3>
-                                            </div>
-                                            <div className="widget-categories">
-                                                <ul>
-                                                    <li><Link href="/service-details">Database Security</Link><i className="fa-solid fa-arrow-right-long" /></li>
-                                                    <li><Link href="/service-details">IT Consultancy</Link><i className="fa-solid fa-arrow-right-long" /></li>
-                                                    <li className="active"><Link href="/service-details">App Development</Link><i className="fa-solid fa-arrow-right-long" /></li>
-                                                    <li><Link href="/service-details">UI/UX Design</Link><i className="fa-solid fa-arrow-right-long" /></li>
-                                                    <li><Link href="/service-details">Cyber Security</Link><i className="fa-solid fa-arrow-right-long" /></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div className="single-sidebar-widget">
-                                            <div className="wid-title">
-                                                <h3>Opening Hours</h3>
-                                            </div>
-                                            <div className="opening-category">
-                                                <ul>
-                                                    <li><i className="fa-regular fa-clock" />Mon - Sat: 10.00 AM - 4.00 PM</li>
-                                                    <li><i className="fa-regular fa-clock" />Sun:  09.00 AM - 4.00 PM</li>
-                                                    <li><i className="fa-regular fa-clock" />Friday: Closed</li>
-                                                    <li><i className="fa-regular fa-clock" />Emergency: 24 hours</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div className="single-sidebar-image bg-cover" style={{ backgroundImage: 'url("assets/img/service/post.jpg")' }}>
-                                            <div className="contact-text">
-                                                <div className="icon">
-                                                    <i className="fa-solid fa-phone" />
-                                                </div>
-                                                <h4>Need Help? Call Here</h4>
-                                                <h5>
-                                                    <Link href="/tel:+2085550112">+208-555-0112</Link>
-                                                </h5>
-                                            </div>
-                                        </div>
-                                    </div> */}
                 <div className="row g-4">
-                  {/* <div className="section-title-area">
-                                    <div className="section-title">
-                                        <h6 className="wow fadeInUp" data-wow-delay=".3s">
-                                        Viewing 24 of 732,848 Homes for Sale in All locations
-                                        </h6>
-                                        <p>Showing listings marketed by all brokers in the searched area.</p>
-                                        <br />
-                                        <div className="dropdown" style={{ position: 'relative', display: 'inline-block', cursor: 'pointer' }} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                                        <span style={{color: "#002349 !important"}}>SORT: EXCLUSIVE (DEFAULT)</span>
-                                        <div className="dropdown-content" style={{display: isHovered ? 'block' : 'none',
-                                            position: "absolute",
-                                            minWidth: "160px",
-                                            boxShadow: "0px 8px 16px 0px rgba(0,0,0,0.2)",
-                                            flexDirection: "column",
-                                            padding: "24px 30px 31px",
-                                            zIndex: "1",
-                                            color: "whitesmoke",
-                                            cursor: "pointer",
-                                            backgroundColor: "#002349",
-                                            borderRadius: "5px"
-                                            }}>
-                                        <p>Exclusive (Default)</p>
-                                        <p>Price High-Low</p>
-                                        <p>Price Low-High</p>
-                                        <p>New Listings First</p>
-                                        <p>Sq Foot High-Low</p>
-                                        <p>Acreage High-Low</p>
-                                        <p>Distance</p>
-                                        </div>
-                                        </div>
-                                    </div>
-                                    </div>     */}
-                  {/* <div className="section-title-area">
-                    <div className="section-title">
-                      <span className="wow fadeInUp">
-                        Viewing 24 of 732,748 Homes for Sale in All locations
-                      </span>
-                      <h6
-                        className="wow fadeInUp"
-                        style={{ color: "#a19c9c" }}
-                        data-wow-delay=".3s"
-                      >
-                        Showing listings marketed by all brokers in the searched
-                        area.
-                      </h6>
-                    </div>
+                  
                 
-                  </div> */}
                   <div
                     className="dropdown"
                     style={{
                       position: "relative",
-                      display: "inline-block",
+                      display: "flex",
                       cursor: "pointer",
+                      gap:"10px"
                     }}
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}
                   >
-                    <span style={{ color: "#002349 !important" }}>
-                      SORT: EXCLUSIVE (DEFAULT)
-                      <i className="fas fa-angle-down ps-1" />
-                    </span>
-
-                    <div
-                      className="dropdown-content"
-                      style={{
-                        display: isHovered ? "block" : "none",
-                        position: "absolute",
-                        minWidth: "160px",
-                        boxShadow: "0px 8px 16px 0px rgba(0,0,0,0.2)",
-                        flexDirection: "column",
-                        padding: "24px 30px 31px",
-                        zIndex: "1",
-                        color: "whitesmoke",
-                        cursor: "pointer",
-                        backgroundColor: "#002349",
-                        borderRadius: "5px",
-                      }}
-                    >
-                      <p>Exclusive (Default)</p>
-                      <p>Price High-Low</p>
-                      <p>Price Low-High</p>
-                      <p>New Listings First</p>
-                      <p>Sq Foot High-Low</p>
-                      <p>Acreage High-Low</p>
-                      <p>Distance</p>
-                    </div>
+                   
+                      <Select
+      multiple
+      value={currentValues}
+      onChange={handleChange}
+      displayEmpty
+      renderValue={(selected) => (selected.length ? selected.join(', ') : defaultValue2)}
+    >
+      <CheckboxOption value="$50-$100" isChecked={currentValues.includes('$50-$100')}>
+      $50-$100
+      </CheckboxOption>
+      <CheckboxOption value="$500-$1000" isChecked={currentValues.includes('$500-$1000')}>
+      $500-$1000
+      </CheckboxOption>
+      <CheckboxOption value="$1000-$1500" isChecked={currentValues.includes('$1000-$1500')}>
+      $1000-$1500
+      </CheckboxOption>
+    </Select>
+                    <Select
+      multiple
+      value={currentValues}
+      onChange={handleChange}
+      displayEmpty
+      renderValue={(selected) => (selected.length ? selected.join(', ') : defaultValue)}
+    >
+      <CheckboxOption value=" 2 Beds & 1 Baths" isChecked={currentValues.includes('2 Beds & 1 Baths')}>
+        2 Beds & 1 Baths
+      </CheckboxOption>
+      <CheckboxOption value=" Beds & 1 Baths" isChecked={currentValues.includes('1 Beds & 1 Baths')}>
+       Beds & 1 Baths
+      </CheckboxOption>
+      <CheckboxOption value="3 Beds & 2 Baths" isChecked={currentValues.includes('3 Beds & 2 Baths')}>
+      3 Beds & 2 Baths
+      </CheckboxOption>
+    </Select>
+    <Select
+      multiple
+      value={currentValues}
+      onChange={handleChange}
+      displayEmpty
+      renderValue={(selected) => (selected.length ? selected.join(', ') : defaultValue1)}
+    >
+      <CheckboxOption value="Apartments" isChecked={currentValues.includes('Apartments')}>
+      Apartments
+      </CheckboxOption>
+      <CheckboxOption value="Bed And Breakfast" isChecked={currentValues.includes('Bed And Breakfast')}>
+      Bed And Breakfast
+      </CheckboxOption>
+      <CheckboxOption value="Condominiums" isChecked={currentValues.includes('Condominiums')}>
+      Condominiums
+      </CheckboxOption>
+    </Select>
+  
                   </div>
                   <div
-                    className="col-xl-6 col-lg-6 col-md-6 wow fadeInUp"
+                    className="col-xl-4 col-lg-6 col-md-12 wow fadeInUp"
                     data-wow-delay=".3s"
                   >
                     <div className="single-team-items">
@@ -700,24 +401,18 @@ export default function Listing({ handleSearch }) {
                               New York, NY, 10019 United States
                             </p>
                           </h3>
-                          <h4 style={{ margin: 0 }}>
-                            <Link href="/property">
-                              <Button
-                                variant="outlined"
-                                endIcon={<ArrowOutwardIcon />}
-                                className="buttonhero42 buttonheroonenew"
-                              >
-                                check now
-                              </Button>
-                            </Link>
-                          </h4>
+                         
                         </div>
+                        <Link href="/property" className="theme-btn-2 mt-3" style={{color:"#f29900"}}>
+                        check availability
+                                            <i className="fa-solid fa-arrow-right-long" />
+                                        </Link>
                       </div>
                     </div>
                   </div>
 
                   <div
-                    className="col-xl-6 col-lg-6 col-md-6 wow fadeInUp"
+                    className="col-xl-4 col-lg-6 col-md-12 wow fadeInUp"
                     data-wow-delay=".3s"
                   >
                     <div className="single-team-items">
@@ -765,22 +460,19 @@ export default function Listing({ handleSearch }) {
                             </p>
                           </h3>
                           <h4 style={{ margin: 0 }}>
-                            <Link href="/property">
-                              <Button
-                                variant="outlined"
-                                endIcon={<ArrowOutwardIcon />}
-                                className="buttonhero42 buttonheroonenew"
-                              >
-                                check now
-                              </Button>
-                            </Link>
+                           
                           </h4>
                         </div>
+                        <Link href="/property" className="theme-btn-2 mt-3" style={{color:"#f29900"}}>
+                        check availability
+                                            <i className="fa-solid fa-arrow-right-long" />
+                                        </Link>
+
                       </div>
                     </div>
                   </div>
                   <div
-                    className="col-xl-6 col-lg-6 col-md-6 wow fadeInUp"
+                    className="col-xl-4 col-lg-6 col-md-12 wow fadeInUp"
                     data-wow-delay=".3s"
                   >
                     <div className="single-team-items">
@@ -827,149 +519,18 @@ export default function Listing({ handleSearch }) {
                               New York, NY, 10019 United States
                             </p>
                           </h3>
-                          <h4 style={{ margin: 0 }}>
-                            <Link href="/property">
-                              <Button
-                                variant="outlined"
-                                endIcon={<ArrowOutwardIcon />}
-                                className="buttonhero42 buttonheroonenew"
-                              >
-                                check now
-                              </Button>
-                            </Link>
-                          </h4>
+                         
                         </div>
+                        <Link href="/property" className="theme-btn-2 mt-3" style={{color:"#f29900"}}>
+                        Check availability
+                                            <i className="fa-solid fa-arrow-right-long" />
+                                        </Link>
                       </div>
                     </div>
                   </div>
-                  <div
-                    className="col-xl-6 col-lg-6 col-md-6 wow fadeInUp"
-                    data-wow-delay=".3s"
-                  >
-                    <div className="single-team-items">
-                      <div className="team-image">
-                        <img src="/assets/img/3.jpg" alt="team-img" />
-                      </div>
-                      <div className="team-content text-left">
-                        <div
-                          style={{
-                            display: "flex",
-                            justifyContent: "space-between",
-                            alignItems: "center",
-                            marginTop: "20px",
-                          }}
-                        >
-                          <h3 style={{ fontSize: "14px" }}>
-                            <Link href="/property">2 Beds | 2 Baths</Link>
-                          </h3>
-                          <h4 style={{ margin: 0 }}>
-                            <Link
-                              href=""
-                              style={{
-                                color: "#ffffff",
-                                fontSize: "25px",
-                                fontWeight: "bold",
-                              }}
-                            >
-                              $200.00
-                            </Link>
-                          </h4>
-                        </div>
 
-                        <div
-                          style={{
-                            display: "flex",
-                            justifyContent: "space-between",
-                            alignItems: "center",
-                            marginTop: "20px",
-                          }}
-                        >
-                          <h3 style={{ fontSize: "20px" }}>
-                            <Link href="/property">74 Georgia</Link>
-                            <p style={{ fontSize: "14px", paddingTop: "10px" }}>
-                              New York, NY, 10019 United States
-                            </p>
-                          </h3>
-                          <h4 style={{ margin: 0 }}>
-                            <Link href="/property">
-                              <Button
-                                variant="outlined"
-                                endIcon={<ArrowOutwardIcon />}
-                                className="buttonhero42 buttonheroonenew"
-                              >
-                                check now
-                              </Button>
-                            </Link>
-                          </h4>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                   <div
-                    className="col-xl-6 col-lg-6 col-md-6 wow fadeInUp"
-                    data-wow-delay=".3s"
-                  >
-                    <div className="single-team-items">
-                      <div className="team-image">
-                        <img src="/assets/img/1.jpg" alt="team-img" />
-                      </div>
-                      <div className="team-content text-left">
-                        <div
-                          style={{
-                            display: "flex",
-                            justifyContent: "space-between",
-                            alignItems: "center",
-                            marginTop: "20px",
-                          }}
-                        >
-                          <h3 style={{ fontSize: "14px" }}>
-                            <Link href="/property">2 Beds | 2 Baths</Link>
-                          </h3>
-                          <h4 style={{ margin: 0 }}>
-                            <Link
-                              href=""
-                              style={{
-                                color: "#ffffff",
-                                fontSize: "25px",
-                                fontWeight: "bold",
-                              }}
-                            >
-                              $200.00
-                            </Link>
-                          </h4>
-                        </div>
-
-                        <div
-                          style={{
-                            display: "flex",
-                            justifyContent: "space-between",
-                            alignItems: "center",
-                            marginTop: "20px",
-                          }}
-                        >
-                          <h3 style={{ fontSize: "20px" }}>
-                            <Link href="/property">74 Georgia</Link>
-                            <p style={{ fontSize: "14px", paddingTop: "10px" }}>
-                              New York, NY, 10019 United States
-                            </p>
-                          </h3>
-                          <h4 style={{ margin: 0 }}>
-                            <Link href="/property">
-                              <Button
-                                variant="outlined"
-                                endIcon={<ArrowOutwardIcon />}
-                                className="buttonhero42 buttonheroonenew"
-                              >
-                                check now
-                              </Button>
-                            </Link>
-                          </h4>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    className="col-xl-6 col-lg-6 col-md-6 wow fadeInUp"
+                    className="col-xl-4 col-lg-6 col-md-12 wow fadeInUp"
                     data-wow-delay=".3s"
                   >
                     <div className="single-team-items">
@@ -1016,23 +577,76 @@ export default function Listing({ handleSearch }) {
                               New York, NY, 10019 United States
                             </p>
                           </h3>
-                          <h4 style={{ margin: 0 }}>
-                            <Link href="/property">
-                              <Button
-                                variant="outlined"
-                                endIcon={<ArrowOutwardIcon />}
-                                className="buttonhero42 buttonheroonenew"
-                              >
-                                check now
-                              </Button>
-                            </Link>
-                          </h4>
+                         
                         </div>
+                        <Link href="/property" className="theme-btn-2 mt-3" style={{color:"#f29900"}}>
+                        Check availability
+                                            <i className="fa-solid fa-arrow-right-long" />
+                                        </Link>
                       </div>
                     </div>
                   </div>
+
                   <div
-                    className="col-xl-6 col-lg-6 col-md-6 wow fadeInUp"
+                    className="col-xl-4 col-lg-6 col-md-12 wow fadeInUp"
+                    data-wow-delay=".3s"
+                  >
+                    <div className="single-team-items">
+                      <div className="team-image">
+                        <img src="/assets/img/2.jpg" alt="team-img" />
+                      </div>
+                      <div className="team-content text-left">
+                        <div
+                          style={{
+                            display: "flex",
+                            justifyContent: "space-between",
+                            alignItems: "center",
+                            marginTop: "20px",
+                          }}
+                        >
+                          <h3 style={{ fontSize: "14px" }}>
+                            <Link href="/property">2 Beds | 2 Baths</Link>
+                          </h3>
+                          <h4 style={{ margin: 0 }}>
+                            <Link
+                              href=""
+                              style={{
+                                color: "#ffffff",
+                                fontSize: "25px",
+                                fontWeight: "bold",
+                              }}
+                            >
+                              $200.00
+                            </Link>
+                          </h4>
+                        </div>
+
+                        <div
+                          style={{
+                            display: "flex",
+                            justifyContent: "space-between",
+                            alignItems: "center",
+                            marginTop: "20px",
+                          }}
+                        >
+                          <h3 style={{ fontSize: "20px" }}>
+                            <Link href="/property">74 Georgia</Link>
+                            <p style={{ fontSize: "14px", paddingTop: "10px" }}>
+                              New York, NY, 10019 United States
+                            </p>
+                          </h3>
+                         
+                        </div>
+                        <Link href="/property" className="theme-btn-2 mt-3" style={{color:"#f29900"}}>
+                        Check availability
+                                            <i className="fa-solid fa-arrow-right-long" />
+                                        </Link>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    className="col-xl-4 col-lg-6 col-md-12 wow fadeInUp"
                     data-wow-delay=".3s"
                   >
                     <div className="single-team-items">
@@ -1079,28 +693,23 @@ export default function Listing({ handleSearch }) {
                               New York, NY, 10019 United States
                             </p>
                           </h3>
-                          <h4 style={{ margin: 0 }}>
-                            <Link href="/property">
-                              <Button
-                                variant="outlined"
-                                endIcon={<ArrowOutwardIcon />}
-                                className="buttonhero42 buttonheroonenew"
-                              >
-                                check now
-                              </Button>
-                            </Link>
-                          </h4>
+                         
                         </div>
+                        <Link href="/property" className="theme-btn-2 mt-3" style={{color:"#f29900"}}>
+                        Check availability
+                                            <i className="fa-solid fa-arrow-right-long" />
+                                        </Link>
                       </div>
                     </div>
                   </div>
+
                   <div
-                    className="col-xl-6 col-lg-6 col-md-6 wow fadeInUp"
+                    className="col-xl-4 col-lg-6 col-md-12 wow fadeInUp"
                     data-wow-delay=".3s"
                   >
                     <div className="single-team-items">
                       <div className="team-image">
-                        <img src="/assets/img/1.jpg" alt="team-img" />
+                        <img src="/assets/img/2.jpg" alt="team-img" />
                       </div>
                       <div className="team-content text-left">
                         <div
@@ -1142,21 +751,138 @@ export default function Listing({ handleSearch }) {
                               New York, NY, 10019 United States
                             </p>
                           </h3>
-                          <h4 style={{ margin: 0 }}>
-                            <Link href="/property">
-                              <Button
-                                variant="outlined"
-                                endIcon={<ArrowOutwardIcon />}
-                                className="buttonhero42 buttonheroonenew"
-                              >
-                                check now
-                              </Button>
-                            </Link>
-                          </h4>
+                         
                         </div>
+                        <Link href="/property" className="theme-btn-2 mt-3" style={{color:"#f29900"}}>
+                        Check availability
+                                            <i className="fa-solid fa-arrow-right-long" />
+                                        </Link>
                       </div>
                     </div>
                   </div>
+
+                  <div
+                    className="col-xl-4 col-lg-6 col-md-12 wow fadeInUp"
+                    data-wow-delay=".3s"
+                  >
+                    <div className="single-team-items">
+                      <div className="team-image">
+                        <img src="/assets/img/4.jpg" alt="team-img" />
+                      </div>
+                      <div className="team-content text-left">
+                        <div
+                          style={{
+                            display: "flex",
+                            justifyContent: "space-between",
+                            alignItems: "center",
+                            marginTop: "20px",
+                          }}
+                        >
+                          <h3 style={{ fontSize: "14px" }}>
+                            <Link href="/property">2 Beds | 2 Baths</Link>
+                          </h3>
+                          <h4 style={{ margin: 0 }}>
+                            <Link
+                              href=""
+                              style={{
+                                color: "#ffffff",
+                                fontSize: "25px",
+                                fontWeight: "bold",
+                              }}
+                            >
+                              $200.00
+                            </Link>
+                          </h4>
+                        </div>
+
+                        <div
+                          style={{
+                            display: "flex",
+                            justifyContent: "space-between",
+                            alignItems: "center",
+                            marginTop: "20px",
+                          }}
+                        >
+                          <h3 style={{ fontSize: "20px" }}>
+                            <Link href="/property">74 Georgia</Link>
+                            <p style={{ fontSize: "14px", paddingTop: "10px" }}>
+                              New York, NY, 10019 United States
+                            </p>
+                          </h3>
+                         
+                        </div>
+                        <Link href="/property" className="theme-btn-2 mt-3" style={{color:"#f29900"}}>
+                        Check availability
+                                            <i className="fa-solid fa-arrow-right-long" />
+                                        </Link>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    className="col-xl-4 col-lg-6 col-md-12 wow fadeInUp"
+                    data-wow-delay=".3s"
+                  >
+                    <div className="single-team-items">
+                      <div className="team-image">
+                        <img src="/assets/img/3.jpg" alt="team-img" />
+                      </div>
+                      <div className="team-content text-left">
+                        <div
+                          style={{
+                            display: "flex",
+                            justifyContent: "space-between",
+                            alignItems: "center",
+                            marginTop: "20px",
+                          }}
+                        >
+                          <h3 style={{ fontSize: "14px" }}>
+                            <Link href="/property">2 Beds | 2 Baths</Link>
+                          </h3>
+                          <h4 style={{ margin: 0 }}>
+                            <Link
+                              href=""
+                              style={{
+                                color: "#ffffff",
+                                fontSize: "25px",
+                                fontWeight: "bold",
+                              }}
+                            >
+                              $200.00
+                            </Link>
+                          </h4>
+                        </div>
+
+                        <div
+                          style={{
+                            display: "flex",
+                            justifyContent: "space-between",
+                            alignItems: "center",
+                            marginTop: "20px",
+                          }}
+                        >
+                          <h3 style={{ fontSize: "20px" }}>
+                            <Link href="/property">74 Georgia</Link>
+                            <p style={{ fontSize: "14px", paddingTop: "10px" }}>
+                              New York, NY, 10019 United States
+                            </p>
+                          </h3>
+                         
+                        </div>
+                        <Link href="/property" className="theme-btn-2 mt-3" style={{color:"#f29900"}}>
+                        Check availability
+                                            <i className="fa-solid fa-arrow-right-long" />
+                                        </Link>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+
+
+
                 </div>
               </div>
               <div className="col-6 col-lg-5 col-md-6 order-2 order-md-2">
